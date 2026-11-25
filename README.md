@@ -3,7 +3,8 @@
 Conteúdo **já aprovado** do [Porto Alegre em Dados](https://portoalegreemdados.com.br), no formato pronto para o
 WordPress. É gerado por `tools/publicar.py exportar` no repositório principal, que é privado. Não edite à mão.
 
-- `pacote.json`: matérias publicadas (ID do post, slug, MD5 e conteúdo).
+- `pacote.json`: matérias publicadas (ID do post, slug, MD5 e conteúdo) e as páginas de dados `/dados/<ficha>/`,
+  com os downloads (CSV no padrão brasileiro e JSON com a procedência).
 - No site, o snippet **PANDORA Ponte** (WPCode) busca este arquivo **por commit**, atualiza só os posts cujo MD5
   mudou e confere o resultado. Só administradores do site podem acionar a ponte.
 
